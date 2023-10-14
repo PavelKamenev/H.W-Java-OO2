@@ -1,0 +1,20 @@
+package sample;
+
+public class Main1 {
+	
+	public static void main(String[] args) {
+	    
+	    Veterinarian veterinarian = new Veterinarian("Кузя");
+	    Animal animalCat = new Animal();
+	    Cat cat = new Cat("fish", "black", 5, "Myrzik" );
+	    animalCat = cat;
+	    Animal animalDog = new Animal();
+	    Dog dog = new Dog("meat", "grey", 10, "Sharick" );
+	    animalDog = dog;
+	    veterinarian.treatment(animalDog);
+	    veterinarian.treatment(animalCat);
+	    
+
+	  }
+	}
+
